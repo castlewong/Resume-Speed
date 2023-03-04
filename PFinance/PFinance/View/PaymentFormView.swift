@@ -184,6 +184,8 @@ struct PaymentFormView_Previews: PreviewProvider {
     }
 }
 
+// created a generic text field (i.e. FormTextField ) to render the field name and the placeholder
+
 struct FormTextField: View {
     let name: String
     var placeHolder: String
