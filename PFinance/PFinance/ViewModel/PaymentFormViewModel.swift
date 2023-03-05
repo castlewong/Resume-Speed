@@ -7,7 +7,7 @@
 
 import Foundation
 import Combine
-
+//Create a view model to represent the payment activity form.Implement form validation in the view model and publish the validation results using Combine.
 class PaymentFormViewModel: ObservableObject {
 
     // Input
