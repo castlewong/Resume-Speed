@@ -12,7 +12,7 @@ struct PaymentFormView: View {
 
     @Environment(\.managedObjectContext) var context
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
+/// The PaymentFormView subscribes to the changes of the view model. When any of the validation variables (e.g. isNameValid ) are updated, PaymentFormView will be notified and the view itself will refresh to display the validation error on screen.
     @ObservedObject private var paymentFormViewModel: PaymentFormViewModel
     
     var payment: PaymentActivity?
